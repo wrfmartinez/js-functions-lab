@@ -154,22 +154,21 @@ Write a function called stringsLongerThan. It takes an array of strings and a nu
 Complete Exercise 8 in the space below:
 */
 
-const stringsLongerThan = (array, num) => {
-  let newArray = [];
+// const stringsLongerThan = (array, num) => {
+//   let newArray = [];
 
-  for (let i = 0; i < array.length; i++) {
-    if (array[i].length > num) {
-      newArray.push(array[i]);
-    }
-  }
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i].length > num) {
+//       newArray.push(array[i]);
+//     }
+//   }
 
-  return newArray;
-}
+//   return newArray;
+// }
 
-console.log('Exercise 8 Result:', stringsLongerThan(['say', 'hello', 'in', 'the', 'morning', 'track'], 3));
+// console.log('Exercise 8 Result:', stringsLongerThan(['say', 'hello', 'in', 'the', 'morning', 'track'], 3));
 
 /*
-
 Exercise 9: numArgs
 
 Challenge yourself with numArgs. This function should return the count of arguments passed to it when called.
@@ -177,5 +176,8 @@ Challenge yourself with numArgs. This function should return the count of argume
 Complete Exercise 9 in the space below:
 */
 
+const numArgs = function() {
+  return arguments.length;
+}
 
-// console.log('Exercise 9 Result:', );
+console.log('Exercise 9 Result:', numArgs(3, 'bob', [2, 4, 5], 7, 'peter'));
