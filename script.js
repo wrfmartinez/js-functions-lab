@@ -16,26 +16,25 @@
   
 // console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 2));
 
-/*
+// /*
+// Exercise 2: maxOfThree
 
-Exercise 2: maxOfThree
+// Define a function, maxOfThree, it should accept three numbers and return the largest among them.
 
-Define a function, maxOfThree, it should accept three numbers and return the largest among them.
+// Complete Exercise 2 in the space below:
+// */
 
-Complete Exercise 2 in the space below:
-*/
+// const maxOfThree = (num1, num2, num3) => {
+//   if (num1 >= num2 && num1 >= num3) {
+//     return num1;
+//   } else if (num2 >= num3 && num2 >= num1) {
+//     return num2;
+//   } else {
+//     return num3;
+//   }
+// }
 
-const maxOfThree = (num1, num2, num3) => {
-  if (num1 >= num2 && num1 >= num3) {
-    return num1;
-  } else if (num2 >= num3 && num2 >= num1) {
-    return num2;
-  } else {
-    return num3;
-  }
-}
-
-console.log('Exercise 2 Result:', maxOfThree(9, 9, 9));
+// console.log('Exercise 2 Result:', maxOfThree(9, 9, 9));
 
 /*
 Exercise 3: Insert at the Beginning
@@ -45,8 +44,20 @@ Write a function named isCharAVowel that takes a single character as an argument
 Complete Exercise 3 in the space below:
 */
 
+const isCharAVowel = (char) => {
+  const vowels = 'a, e, i, o, u';
+  let result = false;
 
-// console.log('Exercise 3 Result:', );
+  for (let i = 0; i < vowels.length; i++) {
+    if (char === vowels[i]) {
+      result = true;
+    }
+  }
+
+  return result;
+}
+
+console.log('Exercise 3 Result:', isCharAVowel('o'));
 
 /*
 
