@@ -44,34 +44,43 @@ Write a function named isCharAVowel that takes a single character as an argument
 Complete Exercise 3 in the space below:
 */
 
-const isCharAVowel = (char) => {
-  const vowels = 'a, e, i, o, u';
-  let result = false;
+// const isCharAVowel = (char) => {
+//   const vowels = 'a, e, i, o, u';
+//   let result = false;
 
-  for (let i = 0; i < vowels.length; i++) {
-    if (char === vowels[i]) {
-      result = true;
-    }
-  }
+//   for (let i = 0; i < vowels.length; i++) {
+//     if (char === vowels[i]) {
+//       result = true;
+//     }
+//   }
 
-  return result;
-}
+//   return result;
+// }
 
-console.log('Exercise 3 Result:', isCharAVowel('o'));
+// console.log('Exercise 3 Result:', isCharAVowel('o'));
 
 /*
 
-// Exercise 4: sumArray
+Exercise 4: sumArray
 
-// Create a function called sumArray. It should take an array of numbers and return the total sum. For example, sumArray([2, 4, 5]) should return 11.
+Create a function called sumArray. It should take an array of numbers and return the total sum. For example, sumArray([2, 4, 5]) should return 11.
 
-// Complete Exercise 4 in the space below:
-// */
+Complete Exercise 4 in the space below:
+*/
 
+const sumArray = (array) => {
+  let sum = 0;
 
-// console.log('Exercise 4 Result:', );
+  for (let i = 0; i < array.length; i++) {
+    sum += array[i];
+  }
 
-// /*
+  return sum;
+} 
+
+console.log('Exercise 4 Result:', sumArray([0, 0, 0]));
+
+/*
 
 // Exercise 5: multiplyArray
 
