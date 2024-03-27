@@ -89,30 +89,38 @@ Define a function called multiplyArray. It should take an array of numbers and r
 Complete Exercise 5 in the space below:
 */
 
-const multiplyArray = (array) => {
-  let product = 1;
+// const multiplyArray = (array) => {
+//   let product = 1;
 
-  for (let i = 0; i < array.length; i++) {
-    product *= array[i];
+//   for (let i = 0; i < array.length; i++) {
+//     product *= array[i];
+//   }
+
+//   return product;
+// }
+
+// console.log('Exercise 5 Result:', multiplyArray([2, 2, 2]));
+
+/*
+
+Exercise 6: reverseString
+
+Define a function called reverseString. It should take a string and return it with its characters in reverse order. For example, reverseString('rockstar'); would return the string "ratskcor".
+
+Complete Exercise 6 in the space below:
+*/
+
+const reverseString = (string) => {
+  let reversed = '';
+
+  for (let i = string.length - 1; i >= 0; i--) {
+    reversed += string[i];
   }
 
-  return product;
+  return reversed;
 }
 
-console.log('Exercise 5 Result:', multiplyArray([2, 2, 2]));
-
-// /*
-
-// Exercise 6: reverseString
-
-// Define a function called reverseString. It should take a string and return it with its characters in reverse order. For example, reverseString('rockstar'); would return the string "ratskcor".
-
-// Complete Exercise 6 in the space below:
-// */
-
-
-
-// console.log('Exercise 6 Result:', );
+console.log('Exercise 6 Result:', reverseString('tree'));
 
 // /*
 
