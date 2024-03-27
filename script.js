@@ -110,50 +110,61 @@ Define a function called reverseString. It should take a string and return it wi
 Complete Exercise 6 in the space below:
 */
 
-const reverseString = (string) => {
-  let reversed = '';
+// const reverseString = (string) => {
+//   let reversed = '';
 
-  for (let i = string.length - 1; i >= 0; i--) {
-    reversed += string[i];
+//   for (let i = string.length - 1; i >= 0; i--) {
+//     reversed += string[i];
+//   }
+
+//   return reversed;
+// }
+
+// console.log('Exercise 6 Result:', reverseString('tree'));
+
+/*
+
+Exercise 7: longestStringInArray
+
+Define a function called longestStringInArray. It should accept an array of strings and return the length of the longest string in the array.
+
+Complete Exercise 7 in the space below:
+*/
+
+const longestStringInArray = (array) => {
+  let longestLength = 0;
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].length > longestLength) {
+      longestLength = array[i].length;
+    }
   }
 
-  return reversed;
+  return longestLength;
 }
 
-console.log('Exercise 6 Result:', reverseString('tree'));
+console.log('Exercise 7 Result:', longestStringInArray(['boo', 'track', 'presumptuous']));
 
-// /*
+/*
 
-// Exercise 7: longestStringInArray
+Exercise 8: stringsLongerThan
 
-// Define a function called longestStringInArray. It should accept an array of strings and return the length of the longest string in the array.
+Write a function called stringsLongerThan. It takes an array of strings and a number, returning all strings longer than the given number. For example, stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3) would return ['hello', 'morning'].
 
-// Complete Exercise 7 in the space below:
-// */
-
-
-// console.log('Exercise 7 Result:', );
-
-// /*
-
-// Exercise 8: stringsLongerThan
-
-// Write a function called stringsLongerThan. It takes an array of strings and a number, returning all strings longer than the given number. For example, stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3) would return ['hello', 'morning'].
-
-// Complete Exercise 8 in the space below:
-// */
+Complete Exercise 8 in the space below:
+*/
 
 
 // console.log('Exercise 8 Result:', );
 
-// /*
+/*
 
-// Exercise 9: numArgs
+Exercise 9: numArgs
 
-// Challenge yourself with numArgs. This function should return the count of arguments passed to it when called.
+Challenge yourself with numArgs. This function should return the count of arguments passed to it when called.
 
-// Complete Exercise 9 in the space below:
-// */
+Complete Exercise 9 in the space below:
+*/
 
 
 // console.log('Exercise 9 Result:', );
