@@ -68,30 +68,38 @@ Create a function called sumArray. It should take an array of numbers and return
 Complete Exercise 4 in the space below:
 */
 
-const sumArray = (array) => {
-  let sum = 0;
+// const sumArray = (array) => {
+//   let sum = 0;
 
-  for (let i = 0; i < array.length; i++) {
-    sum += array[i];
-  }
+//   for (let i = 0; i < array.length; i++) {
+//     sum += array[i];
+//   }
 
-  return sum;
-} 
+//   return sum;
+// } 
 
-console.log('Exercise 4 Result:', sumArray([0, 0, 0]));
+// console.log('Exercise 4 Result:', sumArray([0, 0, 0]));
 
 /*
 
-// Exercise 5: multiplyArray
+Exercise 5: multiplyArray
 
-// Define a function called multiplyArray. It should take an array of numbers and return the product those numbers. For example, multiplyArray([2, 4, 5]); would return 40.
+Define a function called multiplyArray. It should take an array of numbers and return the product of those numbers. For example, multiplyArray([2, 4, 5]); would return 40.
 
-// Complete Exercise 5 in the space below:
-// */
+Complete Exercise 5 in the space below:
+*/
 
+const multiplyArray = (array) => {
+  let product = 1;
 
+  for (let i = 0; i < array.length; i++) {
+    product *= array[i];
+  }
 
-// console.log('Exercise 5 Result:', );
+  return product;
+}
+
+console.log('Exercise 5 Result:', multiplyArray([2, 2, 2]));
 
 // /*
 
