@@ -17,6 +17,7 @@
 // console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 2));
 
 /*
+
 Exercise 2: maxOfThree
 
 Define a function, maxOfThree, it should accept three numbers and return the largest among them.
@@ -24,33 +25,31 @@ Define a function, maxOfThree, it should accept three numbers and return the lar
 Complete Exercise 2 in the space below:
 */
 
-function maxOfThree(num1, num2, num3) {
-  let compare = [num1, num2, num3];
-
-  for (let i = 0; i < compare.length; i++) {
-    // Compares each number within the compare array with the next (compare [i + 1]) until the end of the compare array
-    if (compare[i] >= compare[i + 1]) {
-      compare = compare[i];
-    }
+const maxOfThree = (num1, num2, num3) => {
+  if (num1 >= num2 && num1 >= num3) {
+    return num1;
+  } else if (num2 >= num3 && num2 >= num1) {
+    return num2;
+  } else {
+    return num3;
   }
+}
 
-  return compare;
-} 
+console.log('Exercise 2 Result:', maxOfThree(9, 9, 9));
 
-console.log('Exercise 2 Result:', maxOfThree(4, 9, 3));
+/*
+Exercise 3: Insert at the Beginning
 
-// /*
-// Exercise 3: Insert at the Beginning
+Write a function named isCharAVowel that takes a single character as an argument. It should return true if the character is a vowel, and false otherwise.
 
-// Write a function named isCharAVowel that takes a single character as an argument. It should return true if the character is a vowel, and false otherwise.
-
-// Complete Exercise 3 in the space below:
-// */
+Complete Exercise 3 in the space below:
+*/
 
 
 // console.log('Exercise 3 Result:', );
 
-// /*
+/*
+
 // Exercise 4: sumArray
 
 // Create a function called sumArray. It should take an array of numbers and return the total sum. For example, sumArray([2, 4, 5]) should return 11.
@@ -62,6 +61,7 @@ console.log('Exercise 2 Result:', maxOfThree(4, 9, 3));
 // console.log('Exercise 4 Result:', );
 
 // /*
+
 // Exercise 5: multiplyArray
 
 // Define a function called multiplyArray. It should take an array of numbers and return the product those numbers. For example, multiplyArray([2, 4, 5]); would return 40.
@@ -74,6 +74,7 @@ console.log('Exercise 2 Result:', maxOfThree(4, 9, 3));
 // console.log('Exercise 5 Result:', );
 
 // /*
+
 // Exercise 6: reverseString
 
 // Define a function called reverseString. It should take a string and return it with its characters in reverse order. For example, reverseString('rockstar'); would return the string "ratskcor".
@@ -86,6 +87,7 @@ console.log('Exercise 2 Result:', maxOfThree(4, 9, 3));
 // console.log('Exercise 6 Result:', );
 
 // /*
+
 // Exercise 7: longestStringInArray
 
 // Define a function called longestStringInArray. It should accept an array of strings and return the length of the longest string in the array.
@@ -97,6 +99,7 @@ console.log('Exercise 2 Result:', maxOfThree(4, 9, 3));
 // console.log('Exercise 7 Result:', );
 
 // /*
+
 // Exercise 8: stringsLongerThan
 
 // Write a function called stringsLongerThan. It takes an array of strings and a number, returning all strings longer than the given number. For example, stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3) would return ['hello', 'morning'].
@@ -108,6 +111,7 @@ console.log('Exercise 2 Result:', maxOfThree(4, 9, 3));
 // console.log('Exercise 8 Result:', );
 
 // /*
+
 // Exercise 9: numArgs
 
 // Challenge yourself with numArgs. This function should return the count of arguments passed to it when called.
