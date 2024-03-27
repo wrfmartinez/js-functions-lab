@@ -131,19 +131,19 @@ Define a function called longestStringInArray. It should accept an array of stri
 Complete Exercise 7 in the space below:
 */
 
-const longestStringInArray = (array) => {
-  let longestLength = 0;
+// const longestStringInArray = (array) => {
+//   let longestLength = 0;
 
-  for (let i = 0; i < array.length; i++) {
-    if (array[i].length > longestLength) {
-      longestLength = array[i].length;
-    }
-  }
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i].length > longestLength) {
+//       longestLength = array[i].length;
+//     }
+//   }
 
-  return longestLength;
-}
+//   return longestLength;
+// }
 
-console.log('Exercise 7 Result:', longestStringInArray(['boo', 'track', 'presumptuous']));
+// console.log('Exercise 7 Result:', longestStringInArray(['boo', 'track', 'presumptuous']));
 
 /*
 
@@ -154,8 +154,19 @@ Write a function called stringsLongerThan. It takes an array of strings and a nu
 Complete Exercise 8 in the space below:
 */
 
+const stringsLongerThan = (array, num) => {
+  let newArray = [];
 
-// console.log('Exercise 8 Result:', );
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].length > num) {
+      newArray.push(array[i]);
+    }
+  }
+
+  return newArray;
+}
+
+console.log('Exercise 8 Result:', stringsLongerThan(['say', 'hello', 'in', 'the', 'morning', 'track'], 3));
 
 /*
 
